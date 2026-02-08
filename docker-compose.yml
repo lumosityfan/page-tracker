@@ -33,7 +33,7 @@ services:
       - redis-service
       - web-service
     command: >
-      sh -c 'python -m pytest test/e23 -vv
+      sh -c 'python -m pytest test/e2e -vv
       --redis-url $$REDIS_URL
       --flask-url $$FLASK_URL'
 
